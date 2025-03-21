@@ -1,15 +1,10 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <div class="app-container">
     <HeadComponent />
     <div class="tasks-container">
-      <TaskComponent 
-        v-for="task in tasks" 
-        :key="task.id" 
-        :task="task" 
-      />
+      <TaskComponent v-for="task in tasks" :key="task.id" :task="task" />
       <AddNewTaskButton />
     </div>
   </div>
